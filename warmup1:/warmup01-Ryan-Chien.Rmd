@@ -1,0 +1,93 @@
+---
+title: "warmup01-Ryan-Chien.Rmd"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Star Wars 
+*Torra Doza*
+
+[Character website](https://starwars.fandom.com/wiki/Torra_Doza)
+
+### Torra Doza blockquote:
+> "I'm an Ace pilot. I've battled pirates and marauders."
+
+**Torra Doza Image**
+
+![](https://vignette.wikia.nocookie.net/starwars/images/1/1c/SWResistance-TorraDoza.jpg/revision/latest?cb=20180914205610)
+
+Description | Value
+----------- | -----
+Species | Human
+Gender | Female
+Eye Color | Brown
+Skin Color | Light
+
+#Cooking Recipe
+*Boozy Baked French Toast*
+
+###Ingredients
+* 1 loaf supermarket Challah bread in 1-inch slices
+* 3 cups whole milk
+* 3 eggs
+* 3 tablespoons sugar
+* 1/2 teaspoon salt
+* Flavorings of choice (e.g. Bailey's, Cointreau, etc)
+
+#####"Special" Kitchen Tools
+* 9 X 13 inch baking dish
+
+#####Steps
+1. Grease baking dish with butter
+2. Arrange bread in two tightly-packed layers in the pan
+3. Whisk milk, eggs, sugar, salt and flavorings of your choice to pour over the bread 
+4. Wrap tightly with plastic wrap and refrigerate overnight
+5. Bake at 425 degrees for 30 minutes, or until puffed and golden
+6. Cut into generous squares and serve with maple syurp, fresh fruit, powdered sugar, or all of the above
+
+![](https://smittenkitchendotcom.files.wordpress.com/2015/05/new-years-day-20011.jpg)
+
+**Special Season:** not specified
+
+**Variations of Recipe:** Recipes could vary by flavorings and toppings
+
+# Euclidean Distance
+
+## Definition
+
+The **Euclidean distance** between points __p__ and __q__ is the length of the line segement connecting them (\overline{pq}). 
+
+In Cartesian coordinates, if **p** = \((p_1, p_2, ...., p_n)\) and **q** = \((q_1, q_2, ...., q_n)\) are two points in Euclidean n-space, then the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula.
+
+$$d(p, q) = d(q, p) = \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + ... + (q_n - p_n)^2}$$
+
+$$ = \sqrt{\sum_{i=1}^{n} (q_i - p_i)^2}$$
+
+The position of a point in a Euclidean n-space is a Euclidean vector. So, **p** and **q** may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. The Euclidean norm, or **Euclidean length**, or **magnitude** of a vector measures the length of the vector.
+
+$$ ||p|| \sqrt{p_1^2 + p_2^2 + ... + p_n^2} = \sqrt{p \cdot p},$$
+
+where the last expression involes the dot product. 
