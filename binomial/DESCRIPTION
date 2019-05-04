@@ -1,0 +1,12 @@
+Package: binomial
+Type: Package
+Title: Binomial Distribution
+Version: 0.1.0
+Author: Ryan Chien 
+Maintainer: Ryan Chien <ryanchien04@berkeley.edu
+Description: Provides functions to detail the graphs and summary statistics of the binomial variable and distribution
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.1.1

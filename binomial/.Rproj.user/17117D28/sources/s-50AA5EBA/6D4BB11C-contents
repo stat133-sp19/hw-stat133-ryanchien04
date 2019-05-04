@@ -1,0 +1,11 @@
+Package: binomial
+Type: Package
+Title: Binomial Distribution
+Version: 0.1.0
+Author: Ryan Chien
+Maintainer: https://github.com/stat133-sp19/hw-stat133-ryanchien04
+Description: Provides functions to detail the graphs and summary statistics
+of the binomial variable and distribution
+  License: GPL-2
+Encoding: UTF-8
+LazyData: true

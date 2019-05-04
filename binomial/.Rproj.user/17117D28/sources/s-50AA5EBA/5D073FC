@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556942237313.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3174675091",
+    "id" : "5D073FC",
+    "lastKnownWriteTime" : 1556942282,
+    "last_content_update" : 1556942282998,
+    "path" : "~/binomial/tests/testthat/test-check-functions.R",
+    "project_path" : "tests/testthat/test-check-functions.R",
+    "properties" : {
+        "cursorPosition" : "8,14",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

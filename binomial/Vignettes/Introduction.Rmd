@@ -1,0 +1,74 @@
+---
+title: "Getting Started with Binomial Package"
+author: "Ryan Chien"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(cointoss)
+```
+
+
+## bin_choose()
+Used to find the possible combinations of k number of successes in n number of trials
+
+```{r}
+bin_choose(7, 2)
+```
+
+## bin_probability()
+Gives the binomial probability of k number of successes in n number of trials with probability p
+
+```{r}
+bin_probability(2, 7, 0.5)
+```
+
+## bin_distribution() and plot.bindis()
+Creates a bindis object that reflects the properties of a binomial distribution. The object returns a data frame containing the successes and its corresponding probabilities. The plot.bindis() function plots these values on a barplot
+
+```{r}
+dis1 <- bin_distribution(trials = 5, prob = 0.5)
+dis1
+plot(dis1)
+```
+
+## bin_cumulative() and plot.bincum()
+Creates a bincum object that reflects the properties of a binomial cumulative distribution. The object returns a data frame containing the successes, its corresponding probabilities, as well as its cumulative probabilities. The plot.bincum() function plots these values on a line plot
+
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+dis2
+plot(dis2)
+```
+
+## bin_var(), print.binvar(), summary.binvar(), and print.summary.binvar()
+bin_var() creates a binomial variable with class binvar and with values trials and prob (probability). print.binvar() creates the string representation of the binomial variable listing out its trials and probability values. summary.binvar creates a listed summary object of all the summary values of the binomial variable. 
+
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+binsum <- summary(bin1)
+bin1
+binsum
+```
+
+## bin_mean(), bin_variance(), bin_mode(), bin_skewness(), and bin_kurtosis()
+Each of these functions take in two arguments: trials and probability. And the function returns its respective summary value
+
+```{r}
+trials <- 10
+p <- 0.3
+
+bin_mean(trials, p)
+bin_variance(trials, p)
+bin_mode(trials, p)
+bin_skewness(trials, p)
+bin_kurtosis(trials, p)
+```
+
+

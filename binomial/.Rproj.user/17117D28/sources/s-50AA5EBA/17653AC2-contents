@@ -1,0 +1,41 @@
+context('test summary measures')
+
+test_that('aux_mean() test', {
+
+  expect_equal(aux_mean(10, 0.3), 3)
+  expect_equal(aux_mean(50, 0.7), 35)
+  expect_equal(aux_mean(90, 0.2), 18)
+})
+
+test_that('aux_variance() test', {
+
+  expect_equal(aux_variance(10, 0.3), 2.1)
+  expect_equal(aux_variance(92, 0.3), 19.32)
+  expect_equal(aux_variance(10, 0.22), 1.716)
+})
+
+test_that('aux_mode() test', {
+
+  expect_equal(aux_mode(10, 0.3), 3)
+  expect_equal(aux_mode(20, 0.3), 6)
+  expect_equal(aux_mode(103, 0.43), 44)
+})
+
+test_that('aux_skewness() test', {
+
+  expect_equal(aux_skewness(20, 0.5), 0)
+  expect_equal(aux_skewness(40, 0.5), 0)
+  expect_equal(aux_skewness(39, 0.42), 0.05190976)
+})
+
+test_that('aux_kurtosis() test', {
+
+  expect_equal(aux_kurtosis(10, 0.5), -0.2)
+  expect_equal(aux_kurtosis(122, 0.83), 0.008911248)
+  expect_equal(aux_kurtosis(45, 0.21), 0.0006161677)
+})
+
+
+
+
+

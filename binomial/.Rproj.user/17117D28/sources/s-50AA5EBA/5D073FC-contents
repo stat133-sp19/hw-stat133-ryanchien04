@@ -1,0 +1,34 @@
+context('checker functions')
+
+test_that('check_prob() function', {
+
+  expect_true(check_prob(0.2))
+  expect_true(check_prob(0))
+  expect_true(check_prob(1))
+  expect_error(check_prob(-2))
+  expect_error(check_prob(15))
+})
+
+test_that('check_trials() function', {
+
+  expect_true(check_trials(2))
+  expect_true(check_trials(1000))
+  expect_true(check_trials(888))
+  expect_error(check_trials(-2))
+  expect_error(check_trials(-100))
+})
+
+test_that('check_success() function', {
+
+  expect_true(check_success(15, 20))
+  expect_true(check_success(7, 9))
+  expect_error(check_success(8, 4))
+  expect_error(check_success(9, 1))
+  expect_error(check_success(-1, 5))
+})
+
+
+
+
+
+
